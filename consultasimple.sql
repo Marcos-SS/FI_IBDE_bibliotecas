@@ -1,6 +1,6 @@
 
 SELECT * FROM alumno;
-SELECT nombre_alumno,ap,am FROM alumno where entidad ='Medicina';
+SELECT nombre_alumno,ap,am FROM alumno where facultad ='Medicina';
 SELECT * FROM prestamo;
 SELECT * FROM libro;
 SELECT * FROM catalogo;
@@ -19,6 +19,7 @@ ALTER TABLE alumno RENAME TO alumnado;
 
 --ALTER TABLE nombre_tabla RENAME COLUMN actual_nombre_columna TO nuevo_nombre_columna;
 ALTER TABLE alumnado RENAME COLUMN facultad TO entidad;
+SELECT nombre_alumno,ap,am FROM alumno where entidad ='Medicina';
 
 --ALTER TABLE nombre_tabla ADD COLUMN nombre_columna tipo_de_dato;
 ALTER TABLE alumnado ADD COLUMN promedio integer;
